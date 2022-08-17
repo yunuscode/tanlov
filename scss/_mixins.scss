@@ -1,0 +1,21 @@
+// mixin for media query
+
+@mixin max($max) {
+  @media only screen and (max-width: $max) {
+    @content;
+  }
+}
+
+@mixin min($min) {
+  @media only screen and (min-width: $min) {
+    @content;
+  }
+}
+
+// mixin for list unstyled
+
+@mixin list-unstyled {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+}

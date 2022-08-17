@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tingla</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <script src="./js/player.js"></script>
+  <link rel="stylesheet" href="./css/main.min.css">
+</head>
+
+<body>
+  <!-- header -->
+  <header class="header">
+    <div class="container">
+      <div class="header__container">
+        <a class="header__logo" href="/">
+          <img class="header__logo--image" src="./images/logo/logo.svg" alt="Tingla" width="130" height="39">
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- main -->
+  <main>
+
+    <!-- intro -->
+    <section class="intro">
+      <div class="container">
+        <div class="intro__container">
+          <div class="intro__left">
+            <h1 class="intro__heading">
+              Biz bilan har lahza —unumli
+            </h1>
+            <p class="intro__define">
+              Tingla ilovasi orqali nodir asarlarning audio shaklida tinlashingiz va elektron tarzda mutolaa qilishingiz
+              mumkin.
+            </p>
+            <div class="intro__circle"></div>
+            <div class="intro__wbutton"> <a class="intro__download" href="/download">
+                Yuklab olish
+              </a></div>
+            <img class="intro__shapel" src="./images/intro/shapeleft.webp" width="98" height="98" alt="shape">
+          </div>
+          <div class="intro__right">
+            <img class="intro__hero" width="729" height="514" src="./images/intro/phone.webp" alt="app demonstration">
+            <img class="intro__shapet" src="./images/intro/shapetop.webp" width="148" height="148" alt="shape">
+            <img class="intro__shaper" src="./images/intro/shaperight.webp" width="88" height="88" alt="shape">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- video -->
+    <section class="video">
+      <div class="container">
+        <div class="video__container">
+          <h2 class="visually-hidden">Video player</h2>
+          <div class="video__player" id="player"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- about -->
+    <section class="about">
+      <div class="container">
+        <div class="about__container">
+          <div class="about__card">
+            <div class="about__left">
+              <h2 class="about__heading">
+                Loyiha haqida
+              </h2>
+              <p class="about__define">
+                Yangi ko'rinishdagi va ajoyib g'oya bilan qilingan Tingla ilovasi sizga muntazir. Ushbu ilova orqali siz
+                o'zbek va jahon adabiyotidagi shoh asarlarni elektron shaklda bepul o'qishingiz va audio tarzda
+                tinglashingiz mumkin.
+              </p>
+            </div>
+            <div class="about__right">
+              <img class="about__image" width="495" height="773" src="./images/about/phone.webp" alt="app demonstration">
+            </div>
+            <img class="about__shape" src="./images/about/shape.webp" alt="shape">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- features -->
+    <section class="features">
+      <div class="container">
+        <div class="features__container">
+          <div class="features__left">
+            <img class="features__image" width="600" height="571" src="./images/features/phone.webp" alt="app demonstration">
+            <img class="features__shape" src="./images/features/shape.webp" alt="shape">
+          </div>
+          <div class="features__right">
+            <h2 class="features__heading">
+              Audio-kitobning afzalliklari
+            </h2>
+            <p class="features__define">
+              O'zingizga ma'qul bo'lgan audio-kitoblarni turli xil holatlarda, istalgan joyda tinglashingiz mumkin.
+              Audio-kitoblarga to'lov qilganingizdan so'ng ularni istalgancha foydalanishingiz mumkin. Telefon
+              xotirasiga yuklash, ilova xotirasiga saqlash va audioning tezligini o'zgartirish imkoniyatlari mavjud.
+            </p>
+            <div class="features__circle"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- payment -->
+    <section class="payment">
+      <div class="container">
+        <div class="payment__container">
+          <div class="payment__card">
+            <div class="payment__left">
+              <h2 class="payment__heading">
+                To'lov tizimi
+              </h2>
+              <p class="payment__define">
+                “Tingla” ilovasidagi audio-kitoblarni tinglashingiz uchun ma'lum summadagi to'lovni amalga oshirishigiz
+                zarur. To'lovlar “Payme” yoki “Visa” to'lov tizimlari orqali amalga oshiriladi. To'lov muvaffaqiyatli
+                qabul qilinganidan so'ng audio-kitobni tinglashingiz mumkin bo'ladi
+              </p>
+            </div>
+            <div class="payment__right">
+              <img class="payment__image" width="412" height="791" src="./images/payment/phone.webp" alt="app demonstration">
+            </div>
+            <img class="payment__shape" src="./images/payment/shape.webp" alt="shape">
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- download -->
+    <section class="download" id="download">
+      <div class="container">
+        <div class="download__container">
+          <div class="download__card">
+            <div class="download__card--left">
+              <img class="download__image" width="412" height="791" src="./images/download/phone.webp" alt="app demonstration">
+              <img class="download__shape" src="./images/download/shape.webp" alt="shape">
+            </div>
+            <div class="download__card--right">
+              <h2 class="download__heading">
+                Kitob o'qishdan rohatlaning.
+                <br />
+                Hoziroq yuklab oling
+              </h2>
+              <ul class="download__list">
+                <li class="download__items">
+                  <a class="download__link" href="/playstore">
+                    <img class="download__market" src="./images/download/playmarket.svg" alt="play market" width="162" height="48">
+                  </a>
+                </li>
+                <li class="download__items">
+                  <a class="download__link" href="/appstore">
+                    <img class="download__market" src="./images/download/appstore.svg" alt="app store"  width="162" height="48">
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__container">
+        <ul class="footer__list">
+          <li class="footer__items">
+            <div class="footer__info">
+              <a class="footer__logo" href="/">
+                <img class="footer__logo--img" width="122" height="37" src="./images/footer/logo.svg" alt="logo">
+              </a>
+
+              <p class="footer__licensed">Barcha huquqlar himoyalangan</p>
+            </div>
+            <ul class="footer__links">
+              <li class="footer__links--item">
+                <a class="footer__links--link" href="/privacy">
+                  Maxfiylik siyosati
+                </a>
+              </li>
+              <li class="footer__links--item">
+                <a class="footer__links--link" href="/license">
+                  Ommaviy oferta
+                </a>
+              </li>
+              <li class="footer__links--item">
+                <a class="footer__links--link" href="/terms">
+                  Foydalanish qoidalari
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="footer__items">
+            <div class="footer__contact">
+              <div class="footer__contact--card">
+                <img src="./images/footer/phone.svg" alt="phone logo" width="18" height="18">
+                <div class="footer__contact--box">
+                  <p class="footer__contact--title">Telefon raqam</p>
+                  <a class="footer__contact--link" href="tel:+998999911525">
+                    <p class="footer__contact--number">+998 (71) 771-71-71</p>
+                  </a>
+                </div>
+              </div>
+
+            </div>
+            <ul class="footer__social">
+              <li class="footer__social--items">
+                <a class="footer__social--link" href="/telegram">
+                  <img class="footer__social--image" src="./images/footer/telegram.svg" alt="telegram" width="20" height="20" />
+                </a>
+              </li>
+              <li class="footer__social--items">
+                <a class="footer__social--link" href="/instagram">
+                  <img class="footer__social--image" src="./images/footer/instagram.svg" alt="instagram" width="20" height="20" />
+                </a>
+              </li>
+              <li class="footer__social--items">
+                <a class="footer__social--link" href="/facebook">
+                  <img class="footer__social--image" src="./images/footer/facebook.svg" alt="facebook" width="20" height="20"/>
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    var player = new Playerjs({ id: "player", file: "./images/intro/video.mp4" });
+  </script>
+
+</body>
+
+</html>

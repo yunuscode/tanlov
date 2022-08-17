@@ -1,0 +1,323 @@
+.payment {
+  margin-top: 373px;
+  margin-left: 27px;
+  &__card {
+    width: 1110px;
+    display: flex;
+    align-items: center;
+    width: 1110px;
+    background: $block-bg-color-inverted;
+    border-radius: 20px;
+    position: relative;
+    padding-left: 61px;
+    padding-top: 109px;
+    padding-bottom: 109px;
+  }
+
+
+  &__heading {
+    width: 310px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 60px;
+    letter-spacing: -0.01em;
+    color: $main-text-color;
+  }
+
+  &__define {
+    margin-top: 30px;
+    width: 540px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 34px;
+    color: $main-text-color;
+  }
+
+  &__image {
+    position: absolute;
+    top: -229px;
+    right:67px;
+    width: 412px;
+  }
+
+  &__shape {
+    position: absolute;
+    bottom: -170px;
+    right: calc(50% - 523px);
+  }
+
+  @include max(1360px) {
+    &__heading {
+      font-size: 40px;
+    }
+
+    &__define {
+      font-size: 18px;
+    }
+  }
+
+  @include max(1300px) {
+
+    &__card {
+      width: 1000px;
+      padding-top: 100px;
+      padding-bottom: 100px;
+    }
+
+    &__define {
+      width: 400px;
+    }
+  }
+
+  @include max(1200px) {
+    &__card {
+      width: 100%;
+    }
+  }
+
+  @include max(1125px) {
+    &__card {
+      padding-top: 60px;
+      padding-bottom: 60px;
+    }
+
+    &__image {
+      width: 380px;
+      right: -25px;
+    }
+
+    &__shape {
+      width:80px;
+      bottom: -120px;
+      right: calc(50% - 490px);
+    }
+  }
+
+  @include max(1050px) {
+    &__card {
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+
+    &__image {
+      width: 320px;
+      top: -150px;
+      right: 0;
+    }
+    
+    &__shape {
+      bottom: -120px;
+      right: calc(50% - 450px);
+    }
+  }
+
+  @include max(960px) {
+    margin-top: 240px;
+
+    &__heading {
+      font-size: 30px;
+      line-height: 35px;
+    }
+
+    &__define {
+      margin-top: 15px;
+      font-size: 17px;
+      line-height: 32px;
+    }
+
+    &__card {
+      padding-left: 30px;
+      padding-top: 50px;
+      padding-bottom: 70px;
+    }
+
+    &__image {
+      top: -120px;
+      width: 280px;
+    }
+
+    &__shape {
+      bottom: -120px;
+      right: calc(50% - 410px);
+    }
+  }
+
+  @include max(920px) {
+    margin-top: 280px;
+    
+    &__shape {
+      bottom: -120px;
+      right: calc(50% - 380px);
+    }
+  }
+
+  @include max(820px){
+    &__define{
+      width: 360px;
+      text-align: justify;
+    }
+  }
+
+  @include max(780px){
+    &__define{
+      width: 320px;
+    }
+  }
+
+  @include max(768px) {
+    &__card {
+      display: flex;
+      padding-right: 30px;
+      flex-direction: column-reverse;
+      align-items: center;
+    }
+
+    &__image {
+      position: relative;
+      height: auto;
+      margin-left: 0px;
+    }
+
+    &__right {
+      height: 400px;
+      width: 400px;
+      display: flex;
+      justify-content: center;
+    }
+
+    &__heading {
+      font-size: 34px;
+      width: 500px;
+    }
+
+    &__define {
+      font-size: 18px;
+      width: 400px;
+    }
+
+   
+    &__shape {
+      bottom: -120px;
+      right: calc(50% - 330px);
+    }
+
+    &__right {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 300px;
+    }
+
+  }
+
+  
+  @include max(660px) {
+    &__define {
+      width: 100%;
+    }
+
+    &__left{
+      width: 100%;
+    }
+    &__shape {
+      width: 70px;
+      bottom: -120px;
+      right: calc(50% - 270px);
+    }
+  }
+  @include max(600px) {
+    &__heading {
+      width: 100%;
+    }
+
+    &__define {
+      width: 100%;
+    }
+
+    &__card {
+      padding-left: 24px;
+      padding-right: 24px;
+    }
+    &__shape {
+      width: 70px;
+      bottom: -120px;
+      left: calc(50% - 270px);
+    }
+  }
+
+  @include max(500px) {
+    margin-top: 350px;
+
+    &__card {
+      padding-bottom: 36px;
+    }
+
+    &__shape {
+      width: 70px;
+      bottom: -110px;
+      left: calc(50% - 235px);
+    }
+  
+  }
+
+  @include max(450px) {
+    &__heading {
+      font-style: normal;
+      font-weight: 600;
+      font-size: 26px;
+      line-height: 31px;
+      letter-spacing: -0.01em;
+    }
+
+    &__define {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 30px;
+    }
+
+    &__image {
+      width: 270px;
+    }
+
+    margin-top: 250px;
+
+    &__shape {
+      left: calc(50% - 200px);
+    }
+  }
+
+
+  @include max(415px) {
+    margin-top: 230px;
+    margin-left: 0;
+    &__image {
+      width: 268px;
+      height: auto;
+    }
+
+    &__image {
+      top: -132px;
+    }
+
+    &__right {
+      width: 335px;
+      padding-top: 70px;
+    }
+
+    &__left {
+      padding-top: 32px;
+    }
+
+    &__shape {
+      width: 71px;
+      bottom: -87px;
+      left: calc(50% - 178px);
+    }
+  
+  }
+
+}

@@ -1,0 +1,278 @@
+.about {
+  margin-top: 366px;
+
+  &__card {
+    width: 1110px;
+    display: flex;
+    align-items: center;
+    width: 1110px;
+    background: $block-bg-color;
+    border-radius: 20px;
+    position: relative;
+    padding-left: 80px;
+    padding-top: 126px;
+    padding-bottom: 126px;
+  }
+
+
+  &__heading {
+    width: 310px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 60px;
+    letter-spacing: -0.01em;
+    color: $main-text-color-inverted;
+  }
+
+  &__define {
+    margin-top: 30px;
+    width: 540px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 34px;
+    color: $main-text-color-inverted;
+  }
+
+  &__image {
+    position: absolute;
+    top: -210px;
+    right: 28px;
+  }
+
+  &__shape {
+    position: absolute;
+    top: -257px;
+    right: calc(50% + 10px);
+  }
+
+  @include max(1360px) {
+    &__heading {
+      font-size: 40px;
+    }
+
+    &__define {
+      font-size: 18px;
+    }
+  }
+
+  @include max(1300px) {
+
+    &__card {
+      width: 1000px;
+      padding-top: 100px;
+      padding-bottom: 100px;
+    }
+
+    &__define {
+      width: 400px;
+    }
+  }
+
+  @include max(1200px) {
+    &__card {
+      width: 100%;
+    }
+  }
+
+  @include max(1125px) {
+    &__card {
+      padding-top: 70px;
+      padding-bottom: 70px;
+    }
+
+    &__image {
+      width: 450px;
+      right: -25px;
+    }
+
+    &__shape {
+      top: -220px;
+      width: 150px;
+      right: calc(50% - 60px);
+    }
+  }
+
+  @include max(1050px) {
+    &__card {
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+
+    &__image {
+      width: 370px;
+      top: -150px;
+    }
+  }
+
+  @include max(960px) {
+    margin-top: 240px;
+
+    &__heading {
+      font-size: 30px;
+      line-height: 35px;
+    }
+
+    &__define {
+      margin-top: 15px;
+      font-size: 17px;
+      line-height: 32px;
+    }
+
+    &__card {
+      padding-left: 30px;
+      padding-top: 50px;
+      padding-bottom: 70px;
+    }
+
+    &__image {
+      width: 320px;
+    }
+
+    &__shape {
+      width: 120px;
+      top: -180px;
+    }
+  }
+
+  @include max(920px) {
+    margin-top: 280px;
+  }
+
+  @include max(768px) {
+    &__card {
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+    }
+
+    &__image {
+      position: relative;
+      height: auto;
+    }
+
+    &__right {
+      height: 400px;
+      width: 400px;
+    }
+
+    &__heading {
+      font-size: 34px;
+      width: 500px;
+    }
+
+    &__define {
+      font-size: 18px;
+    }
+
+    &__shape {
+      top: -220px;
+      right: initial;
+      width: 100px;
+      left: calc(50% - 270px);
+    }
+
+    &__right {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 300px;
+    }
+
+    &__image {
+      margin-left: -68px;
+    }
+  }
+
+  @include max(600px) {
+    &__heading {
+      width: 100%;
+    }
+
+    &__define {
+      width: 100%;
+    }
+
+    &__card {
+      padding-left: 24px;
+      padding-right: 24px;
+    }
+  }
+
+  @include max(500px) {
+    margin-top: 350px;
+
+    &__card {
+      padding-bottom: 36px;
+    }
+
+    &__shape {
+      top: -170px;
+      right: initial;
+      width: 100px;
+      left: calc(50% - 250px);
+    }
+  }
+
+  @include max(450px) {
+    &__heading {
+      font-style: normal;
+      font-weight: 600;
+      font-size: 26px;
+      line-height: 31px;
+      letter-spacing: -0.01em;
+    }
+
+    &__define {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 30px;
+    }
+
+    &__image {
+      width: 335px;
+    }
+
+    margin-top: 250px;
+
+    &__shape {
+      left: calc(50% - 200px);
+    }
+  }
+
+
+  @include max(415px) {
+    margin-top: 273px;
+
+    &__image {
+      width: 335px;
+      height: 523px;
+    }
+
+    &__image {
+      top: -128px;
+      margin-left: -50px;
+    }
+
+    &__right {
+      width: 335px;
+      padding-top: 70px;
+    }
+
+    &__left {
+      padding-top: 32px;
+    }
+
+    &__shape {
+      top: -260px;
+      left: calc(50% - 200px);
+      transform: rotate(45deg);
+    }
+  }
+
+  
+
+}
