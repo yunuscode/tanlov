@@ -1,0 +1,10 @@
+/* This is the way to import all the files in the folder. */
+@import './variables';
+@import './mixins';
+
+/* This is importing the reseter.scss file in the resetter folder. */
+@import './resetter/reseter';
+@import './fonts';
+@import './general';
+@import './blocks/blocks'
+

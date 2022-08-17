@@ -1,0 +1,490 @@
+.intro {
+  padding-left: 28px;
+  position: relative;
+
+  &__container {
+    display: flex;
+  }
+
+  &__left {
+    padding-top: 100px;
+    position: relative;
+  }
+
+  &__heading {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 95px;
+    letter-spacing: -1.6px;
+    color: $main-text-color;
+    width: 650px;
+    margin-bottom: 25px;
+  }
+
+  &__define {
+    width: 657px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    color: $main-text-color;
+  }
+
+  &__download {
+    margin-top: 63px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: -0.01em;
+    text-decoration: none;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: absolute;
+    width: 181px;
+    height: 60px;
+    background: $block-bg-color;
+    border-radius: 8px;
+
+    &:hover{
+      opacity: 0.5;
+      transition: all 0.3s ease-in-out;
+    }
+    &:active{
+      opacity: 0.7;
+      transition: all 0.3s ease-in-out;
+    }
+  }
+
+  &__hero {
+    margin-left: 20px;
+    margin-top: -10px;
+    width: 514px;
+  }
+
+  &__right {
+    position: relative;
+  }
+
+  &__shapet {
+    display: block;
+    position: absolute;
+    top: -100px;
+    right: calc(50% + 54px);
+    width: 159px;
+    height: 159px;
+  }
+
+  &__shaper {
+    display: block;
+    position: absolute;
+    bottom: -74px;
+    right: calc(50% - 266px);
+  }
+
+  &__shapel {
+    display: block;
+    position: absolute;
+    bottom: -42px;
+    left: calc(50% - 416px);
+  }
+
+  &__circle {
+    top: 50px;
+    position: absolute;
+    width: 388px;
+    height: 388px;
+    background: #FCBD2C;
+    opacity: 0.2;
+    filter: blur(284px);
+  }
+
+  @include max(1400px) {
+    &__heading {
+      font-size: 70px;
+    }
+
+    &__define {
+      font-size: 22px;
+    }
+
+    &__shapet {
+      right: calc(50% + 50px);
+    }
+
+    &__shapel {
+      bottom: calc(50% - 376px);
+      left: calc(50% - 416px);
+    }
+  }
+
+  @include max(1360px) {
+    &__heading {
+      font-size: 60px;
+      line-height: 80px;
+    }
+
+    &__define {
+      width: 600px;
+      font-size: 20px;
+    }
+
+    &__shapet {
+      right: calc(50% + 50px);
+    }
+
+    &__shapel {
+      bottom: calc(50% - 376px);
+      left: calc(50% - 416px);
+    }
+  }
+
+  @include max(1300px) {
+    &__heading {
+      width: 500px;
+    }
+
+    &__define {
+      width: 500px;
+      font-size: 18px;
+    }
+
+    &__shapel {
+      left: calc(50% - 350px);
+    }
+  }
+
+  @include max(1200px) {
+    &__heading {
+      font-size: 50px;
+      line-height: 60px;
+      width: 400px;
+    }
+
+    &__define {
+      width: 400px;
+    }
+
+    &__shapet {
+      width: 100px;
+      height: 100px;
+      right: calc(50% + 0px);
+    }
+
+    &__shapel {
+      width: 70px;
+      height: 70px;
+      left: calc(50% - 300px);
+    }
+
+    &__shaper {
+      width: 70px;
+      height: 70px;
+    }
+  }
+
+  @include max(1024px) {
+    &__shapet {
+      top: -20px;
+      right: calc(50% + 50px);
+    }
+
+    &__shapel {
+      bottom: -50px;
+      left: calc(50% - 250px);
+    }
+
+    &__shaper {
+      bottom: -50px;
+      right: calc(50% - 250px);
+    }
+  }
+
+  @include max(996px) {
+    &__shapel {
+      bottom: -120px;
+    }
+  }
+
+  @include max(950px) {
+    &__shapel {
+      bottom: -160px;
+    }
+
+    &__shaper {
+      bottom: -50px;
+      right: calc(50% - 230px);
+    }
+
+    &__circle {
+      top: 20px;
+    }
+  }
+
+
+  @include max(920px) {
+    &__shapel {
+      bottom: -190px;
+    }
+  }
+
+  @include max(900px) {
+    &__shapel {
+      bottom: -120px;
+    }
+
+    &__shaper {
+      right: calc(50% - 150px);
+    }
+  }
+
+  @include max(850px) {
+    &__heading {
+      font-size: 40px;
+      line-height: 50px;
+      width: 350px;
+    }
+
+    &__define {
+      width: 350px;
+      font-size: 18px;
+      line-height: 32px;
+    }
+  }
+
+  @include max(780px) {
+    padding-left: 0;
+
+    &__shapel {
+      bottom: -120px;
+      left: calc(50% - 200px);
+    }
+  }
+
+  @include max(768px) {
+    &__container {
+      flex-direction: column-reverse;
+    }
+
+    &__left {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__heading {
+      font-size: 50px;
+      width: 400px;
+    }
+
+    &__define {
+      font-size: 20px;
+      width: 400px;
+    }
+
+    &__download {
+      position: relative;
+      margin-top: 50px;
+    }
+
+    &__wbutton {
+      width: 400px;
+    }
+
+    &__shapel {
+      bottom: initial;
+      top: -200px;
+      left: calc(50% - 300px);
+    }
+
+    &__shaper {
+      bottom: -500px;
+      right: calc(50% - 270px);
+    }
+
+    &__left {
+      padding-top: 20px;
+    }
+  }
+
+  @include max(600px) {
+    &__shapel {
+      top: -200px;
+      left: calc(50% - 260px);
+    }
+
+    &__shapet {
+      top: 0px;
+      right: calc(50% + 20px);
+    }
+
+    &__heading {
+      font-size: 40px;
+    }
+  }
+
+  @include max(550px) {
+    &__shapel {
+      top: -200px;
+      left: calc(50% - 230px);
+    }
+
+    &__shaper {
+      bottom: -500px;
+      right: calc(50% - 220px);
+    }
+  }
+
+  @include max(450px) {
+    &__left {
+      align-items: start;
+    }
+
+    &__wbutton {
+      width: initial;
+    }
+
+    &__heading {
+      width: 300px;
+      font-size: 36px;
+      line-height: 43px;
+    }
+
+    &__define {
+      width: 100%;
+      font-size: 18px;
+      line-height: 32px;
+    }
+
+    &__circle {
+      width: 195px;
+      height: 195px;
+      background: #FCBD2C;
+      opacity: 0.2;
+      filter: blur(124px);
+      left: 40px;
+    }
+
+    &__shaper {
+      width: 49px;
+      height: 49px;
+      bottom: -450px;
+      right: calc(50% - 180px);
+    }
+
+    &__shapel {
+      top: -200px;
+      left: calc(50% - 200px);
+    }
+  }
+
+  @include max(415px) {
+    margin-top: 15px;
+
+    &__hero {
+      width: 307px;
+      height: 437px;
+    }
+
+    &__right {
+      padding-left: 10px;
+    }
+
+    &__shapet {
+      top: 42px;
+      right: calc(50% - 220px);
+    }
+
+    &__download {
+      margin-top: 28px;
+      width: 151px;
+      height: 57px;
+      background: #0F0F54;
+      border-radius: 8px;
+    }
+
+    &__shapel {
+      width: 58px;
+      height: 58px;
+      top: -177px;
+      left: calc(50% - 190px);
+    }
+
+    &__left {
+      padding-top: 0;
+    }
+
+    &__heading {
+      margin-top: 8px;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 43px;
+      width: 293px;
+      text-align: justify;
+    }
+
+    &__define {
+      margin-top: -11px;
+      width: 336px;
+      font-size: 18px;
+      line-height: 32px;
+    }
+
+    &__download {
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 21px;
+      letter-spacing: -0.01em;
+      margin-top: 33px;
+    }
+
+    &__shaper{
+      bottom: -350px;
+      right: calc(50% - 178px);
+    }
+  }
+
+  @include max(390px){
+    &__hero{
+      width:280px;
+      margin-left: 0;
+      padding-left: 0;
+    }
+
+    &__shapet{
+      top: 42px;
+      right: calc(50% - 190px);
+    }
+
+    &__shapel{
+      top: -177px;
+      left: calc(50% - 170px);
+    }
+
+    &__shaper{
+      bottom: -350px;
+      right: calc(50% - 140px);
+    }
+  }
+
+  @include max(340px){
+    &__define{
+      width: 100%;
+    }
+  }
+
+  @include max(370px){
+    &__hero{
+      width: 270px;
+      height: auto;
+    }
+  }
+
+
+}

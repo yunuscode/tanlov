@@ -1,0 +1,282 @@
+.footer {
+  margin-top: 159px;
+  padding-left: 28px;
+  padding-bottom: 62px;
+
+  &__list {
+    @include list-unstyled;
+    display: flex;
+    align-items: start;
+  }
+
+  &__logo {
+    display: block;
+  }
+
+  &__licensed {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    color: $main-text-color;
+    opacity: 0.5;
+    margin-top: 43px;
+  }
+
+  &__items {
+    &:first-child {
+      display: flex;
+    }
+
+    &:last-child {
+      margin-left: 232px;
+    }
+  }
+
+  &__links {
+    @include list-unstyled;
+    margin-left: 189px;
+    display: flex;
+    flex-direction: column;
+
+    &--item~&--item {
+      margin-top: 16px;
+    }
+
+    &--link {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      color: $main-text-color;
+      text-decoration: none;
+      &:hover{
+        opacity: 0.5;
+        transition: all 0.3s ease-in-out;
+      }
+      &:active{
+        opacity: 0.7;
+        transition: all 0.3s ease-in-out;
+      }
+    }
+  }
+
+  &__contact {
+    &--card {
+      display: flex;
+    }
+
+    &--box {
+      margin-left: 19px;
+    }
+
+    &--title {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 18px;
+      color: $main-text-color;
+      opacity: 0.5;
+      mix-blend-mode: normal;
+    }
+
+    &--link {
+      display: block;
+      margin-top: 4px;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 20px;
+      text-decoration: none;
+      color: $main-text-color;
+      &:hover{
+        opacity: 0.5;
+        transition: all 0.3s ease-in-out;
+      }
+      &:active{
+        opacity: 0.7;
+        transition: all 0.3s ease-in-out;
+      }
+    }
+  }
+
+  &__social {
+    @include list-unstyled;
+    display: flex;
+    margin-top: 32px;
+
+    &--items~&--items {
+      margin-left: 24px;
+    }
+
+    &--link{
+      &:hover{
+        opacity: 0.5;
+        transition: all 0.3s ease-in-out;
+      }
+      &:active{
+        opacity: 0.7;
+        transition: all 0.3s ease-in-out;
+      }
+    }
+  }
+
+  @include max(1180px) {
+    &__items {
+      &:last-child {
+        margin-left: 170px;
+      }
+    }
+  }
+
+  @include max(1115px) {
+    &__links {
+      margin-left: 150px;
+    }
+  }
+
+  @include max(1115px) {
+    &__items {
+      &:last-child {
+        margin-left: 140px;
+      }
+    }
+
+    &__links {
+      margin-left: 120px;
+    }
+  }
+
+  @include max(1015px) {
+    &__items {
+      &:last-child {
+        margin-left: 120px;
+      }
+    }
+
+    &__links {
+      margin-left: 100px;
+    }
+  }
+
+  @include max(975px) {
+    &__items {
+      &:last-child {
+        margin-left: 90px;
+      }
+    }
+
+    &__links {
+      margin-left: 50px;
+    }
+  }
+
+  @include max(800px) {
+    &__items {
+      &:last-child {
+        margin-left: 70px;
+      }
+    }
+
+    &__links {
+      margin-left: 40px;
+    }
+  }
+
+  @include max(768px) {
+    margin-top: 120px;
+
+    &__items {
+      justify-content: space-between;
+
+      &:first-child {
+        flex-direction: column;
+      }
+
+      &:last-child {
+        margin-left: initial;
+        display: flex;
+        flex-direction: column-reverse;
+      }
+    }
+
+    &__list {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &__links {
+      margin-top: 50px;
+      margin-left: 0;
+    }
+
+    &__social {
+      margin-top: 0;
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    &__contact {
+      margin-top: 42px;
+    }
+
+    &__licensed {
+      display: none;
+      visibility: hidden;
+    }
+  }
+
+  @include max(450px) {
+    padding-left: 0;
+  }
+
+  @include max(415px) {
+    margin-top: 100px;
+
+    &__logo {
+      width: 113px;
+    }
+
+    &__links {
+      margin-top: 41px;
+      margin-left: 0;
+    }
+   
+  }
+
+  @include max(400px) {
+    &__links {
+      &--link {
+        font-size: 14px;
+        line-height: 18px;
+      }
+    }
+
+    &__contact{
+      &--title {
+        font-size: 12px;
+        line-height: 16px;
+      }
+
+      &--link{
+        font-size: 14px;
+        line-height: 16px;
+      }
+    }
+  }
+
+  @include max(350px){
+    &__contact{
+
+      &--box{
+        margin-left: 10px;
+      }
+
+      &--link{
+        font-size: 13px;
+        line-height: 16px;
+      }
+    }
+  }
+
+}

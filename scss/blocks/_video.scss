@@ -1,0 +1,62 @@
+.video {
+  padding-top: 180px;
+  position: relative;
+
+  &__player {
+    display: block;
+    width: 1110px;
+  }
+
+
+  @include max(1400px) {
+    &__container {
+      display: flex;
+      justify-content: center;
+    }
+
+    &__player {
+      width: 1000px;
+    }
+  }
+
+  @include max(1024px) {
+
+    &__player {
+      max-height: 400px !important;
+    }
+  }
+
+  @include max(920px) {
+    padding-top: 220px;
+  }
+
+  @include max(768px) {
+    padding-top: 140px;
+
+    &__player {
+      max-height: 350px !important;
+    }
+  }
+
+  @include max(600px) {
+    &__player {
+      max-height: 300px !important;
+    }
+  }
+
+  @include max(500px) {
+    &__player {
+      max-height: 250px !important;
+    }
+  }
+
+  @include max(415px) {
+    padding-top: 132px;
+    &__player {
+      width: 366px;
+      max-height: 220px !important;
+    }
+  }
+
+
+}

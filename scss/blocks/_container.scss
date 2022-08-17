@@ -1,0 +1,30 @@
+/* Defining the width of the container, the maximum width of the container, the left and right padding,
+and the left and right margin. */
+.container {
+  width: 100%;
+  max-width: 1440px;
+  padding-left: 137px;
+  padding-right:137px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include max(1250px){
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+
+  @include max(900px){
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  @include max(500px){
+  padding-left: 24px;
+  padding-right: 24px;
+  }
+  
+  @include max(400px){
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
